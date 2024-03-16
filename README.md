@@ -65,7 +65,7 @@ This will create a link that people can click to add your bot to any server with
 > **THIS TOKEN IS HOW TO CONNECT TO YOUR APPLICATION WITH CODE, NO ONE NEEDS ANYTHING ELSE TO CONNECT/LOG INTO YOUR BOT EXCEPT THE MOST RECENT TOKEN. NEVER POST IT OR YOU RISK YOUR BOT GETTING HIGHJACKED**
 
 > [!CAUTION]
-> If you do not gitignore the `.env` file in your `.gitignore` (which is where you put your token, not in your bot code) (and you should use a .env for storing your token in code and a .gitignore to hide private files), then GitHub bots **will** scrape your token (it has happened to me) and may use it. Discord will hopefully send you a message very fast saying they caught it and reset it since they are also scraping for Discord Bot Tokens to watch out for you anid keep your bots secure :)
+> If you do not gitignore the `.env` file in your `.gitignore` (which is where you put your token, not in your bot code) (and you should use a .env for storing your token in code and a .gitignore to hide private files), then GitHub bots **will** scrape your token (it has happened to me) and may use it. Discord will hopefully send you a message very fast saying they caught it and reset it since they are also scraping for Discord Bot Tokens to watch out for you and keeping your bots secure :)
 
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop_2024/assets/111905194/79737d0c-b11f-4ee2-a0e2-f23a2d7f92f7)
 
@@ -83,7 +83,7 @@ For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat
 ```
 pip install discord && pip install python-dotenv
 ```
-After you have successfully installed the python discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
+After you have successfully installed the Python Discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
 
 ### IN THE FOLDER
 Create a new file named `.env` file (no name before the dot) and put the following in it.
