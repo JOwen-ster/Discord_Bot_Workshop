@@ -5,15 +5,12 @@ from discord import app_commands
 
 # import os and load_dotenv to load the .env file 
 from os import getenv
-
+from dotenv import load_dotenv
 
 # load discord bot token from .env file
 load_dotenv()
 TOKEN = getenv("DISCORD_TOKEN")
 
-# load discord bot token from .env file
-load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents

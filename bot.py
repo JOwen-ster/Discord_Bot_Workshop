@@ -5,7 +5,7 @@ from discord import app_commands
 
 # import os and load_dotenv to load the .env file 
 from os import getenv
-
+from dotenv import load_dotenv
 
 # load discord bot token from .env file
 load_dotenv()
