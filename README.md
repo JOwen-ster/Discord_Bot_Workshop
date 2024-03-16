@@ -29,7 +29,7 @@ This will make it so people can add your bot from its profile with these selecte
 
 Finally, scroll down till you see `OAuth2 URL Generator`
 * Under Scopes -> click `bot`
-* Under Bot Permissions -> click any permissions that you bot will need.
+* Under Bot Permissions -> click any permissions that your bot will need.
 
 This will create a link that people can click to add your bot to any server with these selected perms to any server they have the `Manage Server` permission in.
 
