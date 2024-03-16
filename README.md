@@ -86,7 +86,7 @@ For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat
 ```
 pip install discord && pip install python-dotenv && pip install pistonapi
 ```
-After you have successfully installed the Python Discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
+After you have successfully installed the Python Discord and dotenv libraries, create a new folder OUTSIDE THIS DIRECTORY (Since this is going to be your bot) and name it something like `mydiscordbot` and open it up with your favorite code editor.
 
 ### IN THE FOLDER
 Create a new file named `.env` (no name before the dot) and put the following in it.
