@@ -4,7 +4,7 @@ A repo on how to setup a discord bot step by step!
 ![Discord_Python_Logo](https://images.opencollective.com/discordpy/25fb26d/logo/256.png)
 
 ## Creating Your Application
-Head over to the [discord developer page](https://discord.com/developers/applications), log in, and in the top right click `New Application`.
+Head over to the [discord developer page](https://discord.com/developers/applications), log in, and in the top right click `New Application` and type the name of your Discord bot.
 
 > [!NOTE]
 > For simplicity we will not select a team, but you can create a team in the 'Teams' tab and add people that will be associated with the development of the bot!
