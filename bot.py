@@ -14,6 +14,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
 intents = discord.Intents.all() # use discord.Intents.default() if you don't need all
+
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
 client = discord.Client(intents=intents) # create a new discord client with the intents to connect it to the discord gateway
 

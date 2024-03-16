@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 
-# import os and load_dotenv to load the .env file 
+# import os and load_dotenv to load the .env file
 import os
 from dotenv import load_dotenv
 
@@ -17,6 +17,7 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
 
 # Create a new discord client with the intents to connect it to the discord gateway
+# You can name it bot or application it is up to you
 client = discord.Client(intents=intents)
 
 # Set bot prefix
