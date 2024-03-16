@@ -1,10 +1,26 @@
-# Discord_Bot_Workshop_2024
+# Discord_Bot_Workshop
 A repo on how to setup a discord bot step by step!
 **You need**
 - Discord account
 - Python installed
 - Internet access
 - A IDE to edit and run code (Like Visual Studio Code)
+
+***CLONE THIS REPOSITORY***
+- [x] HTTPS
+```
+git clone https://github.com/JOwen-ster/Discord_Bot_Workshop.git
+```
+
+- [X] SSH
+```
+git clone git@github.com:JOwen-ster/Discord_Bot_Workshop.git
+```
+
+- [X] GitHub CLI
+```
+gh repo clone JOwen-ster/Discord_Bot_Workshop
+```
 
 ![Discord_Python_Logo](https://images.opencollective.com/discordpy/25fb26d/logo/256.png)
 
@@ -62,18 +78,26 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 Go ahead and `pip install` the required libraries for Discord and Environment Variables.
 
-For Windows you can execute this [batch file](/discord_dependencies.bat) I have made if you have Python installed or use the following command.
+For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat) found in this repo or run the following command...
 
 ```
 pip install discord && pip install python-dotenv
 ```
-After you do this. Open up your favorite code editor and create a new folder named `mydiscordbot`.
+After you have successfully installed the python discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
 
 ### IN THE FOLDER
-Create a `.env` file and then inside it write the following code
+Create a new file named `.env` file (no name before the dot) and put the following in it.
 ```
 DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
 ```
-Create a `bot.py` file and use my [discord python bot template](/bot_template.py) to get all the runner code.
 
-Create a `.gitignore` file 
+Create a new file named `.gitignore` (no name before the dot) and put the following inside it.
+```
+.env
+```
+
+Create a new file and name it `bot.py`
+- Use my [discord python bot template](/bot_template.py) to get all the runner code and put it into your `bot.py` file (found in this repository).
+
+
+
