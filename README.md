@@ -59,4 +59,8 @@ Go ahead and `pip install` the required libraries for discord.
 ```
 pip install discord && pip install python-dotenv
 ```
-After you do this. You can use my [Discord Python Template](/bot_template.py)
+After you do this. Open up your favorite code editor and use my [discord python bot template](/bot_template.py) to get started.
+Create a `.env` file and then inside it write the following code
+```
+DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
+```
