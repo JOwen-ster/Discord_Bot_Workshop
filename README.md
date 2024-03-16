@@ -49,7 +49,8 @@ This will create a link that people can click to add your bot to any server with
 
 ## Coding the Actual Discord Bot
 We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) api wrapper in this workshop
-[Read the docs (Commands)](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
 
-[Read the docs (Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
+[Read the docs (How to do Commands)](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
+
+[Read the docs (How to do Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
 
