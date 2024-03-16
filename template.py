@@ -3,10 +3,13 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 
-# import os and load_dotenv to load the .env file
-import os
-from dotenv import load_dotenv
+# import os and load_dotenv to load the .env file 
+from os import getenv
 
+
+# load discord bot token from .env file
+load_dotenv()
+TOKEN = getenv("DISCORD_TOKEN")
 
 # load discord bot token from .env file
 load_dotenv()
