@@ -4,13 +4,12 @@ from discord.ext import commands
 from discord import app_commands
 
 # import os and load_dotenv to load the .env file 
-import os
-from dotenv import load_dotenv
+from os import getenv
 
 
 # load discord bot token from .env file
 load_dotenv()
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
 intents = discord.Intents.all() # use discord.Intents.default() if you don't need all
