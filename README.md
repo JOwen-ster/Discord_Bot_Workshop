@@ -32,7 +32,7 @@ This will create a link that people can click to add your bot to any server with
 
 ## Before we get coding...
 > [!IMPORTANT]
-> Go to the `Bot` tab
+> Go to the `Bot` tab.
 > Click `Reset Token` near the top of the page
 
 ***__COPY AND SAVE THIS TOKEN SOMEWHERE SECURE AND SOMEWHERE YOU CAN ACCESS IT__***
