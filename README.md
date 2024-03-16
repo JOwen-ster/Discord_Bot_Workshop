@@ -1,5 +1,10 @@
 # Discord_Bot_Workshop_2024
 A repo on how to setup a discord bot step by step!
+**You need**
+- Discord account
+- Python installed
+- Internet access
+- A IDE to edit and run code (Like Visual Studio Code)
 
 ![Discord_Python_Logo](https://images.opencollective.com/discordpy/25fb26d/logo/256.png)
 
@@ -55,12 +60,20 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 [Read the docs (How to do Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
 
-Go ahead and `pip install` the required libraries for discord.
+Go ahead and `pip install` the required libraries for Discord and Environment Variables
+
+For Windows you can execute this [batch file](/discord_dependancies.bat) I have made if you have Python installed or use the following command.
+
 ```
 pip install discord && pip install python-dotenv
 ```
-After you do this. Open up your favorite code editor and use my [discord python bot template](/bot_template.py) to get started.
+After you do this. Open up your favorite code editor and create a new folder named `mydiscordbot`.
+
+### IN THE FOLDER
 Create a `.env` file and then inside it write the following code
 ```
 DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
 ```
+Create a `bot.py` file and use my [discord python bot template](/bot_template.py) to get all the runner code.
+
+Create a `.gitignore` file 
