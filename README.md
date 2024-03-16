@@ -54,3 +54,7 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 [Read the docs (How to do Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
 
+```
+pip install discord
+pip install python-dotenv=
+```
