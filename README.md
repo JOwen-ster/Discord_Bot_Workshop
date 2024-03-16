@@ -24,6 +24,9 @@ This will make it so people can add your bot from its profile with these selecte
 > For this workshop we will use the `Administrator` perm since it will cause no conflict since the bot will have access to all channels with all permissions.
 > Bots are treated like regular members/users with their access to channels and ways they interact with the server like being able to manage messages is not a usual default perm for most servers, it is not for a bot unless you give it that perm.
 
+> [!WARNING]
+> Unless your Discord bot is going to do server management such as raid protection, serversetup, moderation, or many various things that deal with the server not and just interactions, I would **NOT** setting your permissions as Admin since its "easy". From my bot developing experience, when getting bots into bigger servers, some owners really wanna limit what it can do for security purposes in case your token gets exposed as an exmaple.
+
 Finally, scroll down till you see `OAuth2 URL Generator`
 * Under Scopes -> click `bot`
 * Under Bot Permissions -> click any permissions that you bot will need.
