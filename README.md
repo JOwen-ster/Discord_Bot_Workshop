@@ -3,7 +3,7 @@ A repo on how to setup a discord bot step by step!
 
 ![Discord_Python_Logo](https://images.opencollective.com/discordpy/25fb26d/logo/256.png)
 
-### Creating Your Application
+## Creating Your Application
 Head over to the [discord developer page](https://discord.com/developers/applications), log in, and in the top right click `New Application`.
 
 > [!NOTE]
@@ -33,7 +33,7 @@ Finally, scroll down till you see `OAuth2 URL Generator`
 
 This will create a link that people can click to add your bot to any server with these selected perms to any server they have the `Manage Server` permission in.
 
-## Before we get coding...
+### Before we get coding...
 > [!IMPORTANT]
 > Go to the `Bot` tab.
 > Click `Reset Token` near the top of the page
@@ -54,7 +54,7 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 [Read the docs (How to do Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
 
-```
+```python
 pip install discord
 pip install python-dotenv
 ```
