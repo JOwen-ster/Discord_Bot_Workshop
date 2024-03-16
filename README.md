@@ -83,7 +83,7 @@ Go ahead and `pip install` the required libraries for Discord and Environment Va
 For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat) found in this repo or run the following command...
 
 ```
-pip install discord && pip install python-dotenv
+pip install discord && pip install python-dotenv && pip install pistonapi
 ```
 After you have successfully installed the Python Discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
 
