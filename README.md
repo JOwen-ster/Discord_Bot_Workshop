@@ -46,6 +46,7 @@ This will create a link that people can click to add your bot to any server with
 > [!CAUTION]
 > If you do not gitignore the `.env` file in your `.gitignore` (which is where you put your token, not in your bot code) (and you should use a .env for storing your token in code and a .gitignore to hide private files), then GitHub bots **will** scrape your token (it has happened to me) and may use it. Discord will hopefully send you a message very fast saying they caught it and reset it since they are also scraping for Discord Bot Tokens to watch out for you anid keep your bots secure :)
 
+![image](https://github.com/JOwen-ster/Discord_Bot_Workshop_2024/assets/111905194/79737d0c-b11f-4ee2-a0e2-f23a2d7f92f7)
 
 ## Coding the Actual Discord Bot
 We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) api wrapper in this workshop
