@@ -70,4 +70,3 @@ async def repeat(ctx, *, arg): # passing many parameters without parsing them
     await ctx.send(arg) # arg is a string
     
 client.run(TOKEN)
-
