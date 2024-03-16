@@ -48,4 +48,5 @@ This will create a link that people can click to add your bot to any server with
 
 
 ## Coding the Actual Discord Bot
+[Read the docs](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
 
