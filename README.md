@@ -16,7 +16,7 @@ Click on the `Bot` tab and then go to `Privileged Gateway Intents`. These are th
 
 Next, head over to the `OAuth2` Tab and then in the dropdown menu for `Default Authorization Link`, click on `In-app Authorization`.
 * Under Scopes -> click `bot`
-* Under Bot Permissions -> click any permissions that you bot will need.
+* Under Bot Permissions -> click any permissions that your bot will need.
 
 This will make it so people can add your bot from its profile with these selected perms to any server they have the `Manage Server` permission in.
 
