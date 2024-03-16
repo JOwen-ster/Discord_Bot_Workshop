@@ -39,4 +39,4 @@ This will create a link that people can click to add your bot to any server with
 
 > [!CAUTION]
 > **THIS TOKEN IS HOW TO CONNECT TO YOUR APPLICATION WITH CODE, NO ONE NEEDS ANYTHING ELSE TO CONNECT/LOG INTO YOUR BOT EXCEPT THE MOST RECENT TOKEN. NEVER POST IT UNLESS YOU RISK YOUR BOT GETTING HIGHJACKED**
-> If you do not ignore the .env file where you put your token (and you should use a .env file), then github bots will scrape your token and may use it but Discord will also send you a message hopefully very fast saying they caught it and reset it since they are also scraping for them to watch out for you :)
+> If you do not gitignore the `.env` file in your `.gitignore` file where you put your token (and you should use a .env for storing your token in code and a .gitignore to hide private files), then github bots will scrape your token and may use it but Discord will also send you a message hopefully very fast saying they caught it and reset it since they are also scraping for them to watch out for you :)
