@@ -58,4 +58,4 @@ Go ahead and `pip install` the required libraries for discord.
 ```
 pip install discord && pip install python-dotenv
 ```
-After you do this. You can use my [Discord Python Template](/bottemplate.py)
+After you do this. You can use my [Discord Python Template](bottemplate.py)
