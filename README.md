@@ -86,7 +86,7 @@ pip install discord && pip install python-dotenv
 After you have successfully installed the Python Discord and dotenv libraries, create a new folder named `mydiscordbot` and open it up with your favorite code editor.
 
 ### IN THE FOLDER
-Create a new file named `.env` file (no name before the dot) and put the following in it.
+Create a new file named `.env` (no name before the dot) and put the following in it.
 ```
 DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
 ```
