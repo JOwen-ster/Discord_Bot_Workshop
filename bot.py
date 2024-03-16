@@ -45,7 +45,7 @@ async def mylistener(message):
 
 @client.tree.command(name="ping", description="Check the bot's latency") # slash command
 async def ping(interaction: discord.Interaction):
-    await interaction.response.send_message(f'Pong! I responded in{round(client.latency * 1000)}ms')
+    await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
     
 @client.command() # regular prefix command, not a slash command
 async def dms(ctx):

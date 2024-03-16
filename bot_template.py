@@ -34,8 +34,8 @@ async def on_ready():
         print(F'Could Not Sync Tree: {e}')
         
 @client.tree.command(name="ping", description="Check the bot's latency") # slash command
-async def ping(interaction: discord.Interaction, param: str, optional_param=None):
-    await interaction.response.send_message(f'Pong! I responded in{round(client.latency * 1000)}ms')
+async def ping(interaction: discord.Interaction, param: str, optional_param: str=None):
+    await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
 
 
 client.run(token=TOKEN)
