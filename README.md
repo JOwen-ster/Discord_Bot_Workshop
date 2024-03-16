@@ -56,5 +56,5 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 ```
 pip install discord
-pip install python-dotenv=
+pip install python-dotenv
 ```
