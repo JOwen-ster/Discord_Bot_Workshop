@@ -85,6 +85,10 @@ async def run(ctx, *, code: str):
     else:
         howto = '`$run\n```\nCODE_HERE\n``` `'
         await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
-
+# if py use python
+# if cpp use c++
+# if js use javascript
+# if java use java
+# Make a command that list all VALID code block languages
 
 client.run(TOKEN)
