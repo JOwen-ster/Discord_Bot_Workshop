@@ -81,12 +81,18 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 Go ahead and `pip install` the required libraries for Discord and Environment Variables.
 
-For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat) found in this repo or run the following command...
-
+For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat) found in this repo
+- or
+Run the following command...
 ```
 pip install discord && pip install python-dotenv && pip install pistonapi
 ```
-After you have successfully installed the Python Discord and dotenv libraries, create a new folder OUTSIDE THIS DIRECTORY (Since this is going to be your bot) and name it something like `mydiscordbot` and open it up with your favorite code editor.
+- or
+Install from the requirements.txt in this repo
+```
+pip install -r requirements.txt
+```
+After you have successfully installed the libraries, create a new folder OUTSIDE THIS DIRECTORY (Since this is going to be your bot) and name it something like `mydiscordbot` and open it up with your favorite code editor.
 
 ### IN THE FOLDER
 Create a new file named `.env` (no name before the dot) and put the following in it.
