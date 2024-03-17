@@ -85,7 +85,6 @@ async def run(ctx, *, code: str):
     else:
         howto = '`$run\n```\nCODE_HERE\n``` `'
         await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
-    
 
 
 client.run(TOKEN)
