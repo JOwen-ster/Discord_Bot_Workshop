@@ -71,15 +71,21 @@ async def repeatparams(ctx, *args): # passing and parsing parameters from a comm
 @client.command()
 async def repeat(ctx, *, arg): # passing many parameters without parsing them
     await ctx.send(arg) # arg is a string
-    
+
 @client.command()
 async def run(ctx, *, code: str):
     piston = PistonAPI()
     await ctx.channel.send('Running...')
     
-    fcode = f'''{code}'''
-    response = piston.execute(language="py3", version="3.10.0", code=fcode)
-    await ctx.channel.send(f'''```\n{response}```''', reference=ctx.message)
+    if code.startswith('```') and code.endswith('```'):
+        code = code[3:-3]
+        fcode = f'''{code}'''
+        response = piston.execute(language="py3", version="3.10.0", code=fcode)
+        await ctx.channel.send(f'''```\n{response}```''', reference=ctx.message)
+    else:
+        howto = '`$run\n```\nCODE_HERE\n``` `'
+        await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
+    
 
 
 client.run(TOKEN)
