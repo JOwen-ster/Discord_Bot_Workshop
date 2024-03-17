@@ -7,6 +7,9 @@ from discord import app_commands
 from os import getenv
 from dotenv import load_dotenv
 
+# import piston API to run code
+from pistonapi import PistonAPI
+
 # load discord bot token from .env file
 load_dotenv()
 TOKEN = getenv("DISCORD_TOKEN")
@@ -45,7 +48,7 @@ async def mylistener(message):
 @client.tree.command(name="ping", description="Check the bot's latency") # slash command
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
-    
+
 @client.command() # regular prefix command, not a slash command
 async def dms(ctx):
     # if you want to test dms without sending a message do this...
@@ -59,14 +62,24 @@ async def dms(ctx):
         await ctx.author.send('You have dms enabled from server members!')
     except discord.Forbidden:
         await ctx.channel.send("Please enable 'Allow direct messages from server members' in your Discord 'Privacy & Safety' settings.", ephemeral=True)
-        
+
 @client.command()
 async def repeatparams(ctx, *args): # passing and parsing parameters from a command
     arguments = ', '.join(args) # *args is a tuple
     await ctx.send(f'{len(args)} arguments: {arguments}')        
-        
+
 @client.command()
 async def repeat(ctx, *, arg): # passing many parameters without parsing them
     await ctx.send(arg) # arg is a string
     
+@client.command()
+async def run(ctx, *, code: str):
+    piston = PistonAPI()
+    await ctx.channel.send('Running...')
+    
+    fcode = f'''{code}'''
+    response = piston.execute(language="py3", version="3.10.0", code=fcode)
+    await ctx.channel.send(f'''```\n{response}```''', reference=ctx.message)
+
+
 client.run(TOKEN)
