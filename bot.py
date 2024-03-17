@@ -21,7 +21,7 @@ intents = discord.Intents.all() # use discord.Intents.default() if you don't nee
 client = discord.Client(intents=intents) # create a new discord client with the intents to connect it to the discord gateway
 
 # Set bot prefix
-client = commands.Bot(command_prefix='$', intents=intents)
+client = commands.Bot(command_prefix='$', intents=intents) # you can also dm your bot to run commands!
 
 # Decorators can be...
 # 1. A function name associated with an action.
