@@ -81,7 +81,7 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) a
 
 Go ahead and `pip install` the required libraries for Discord and Environment Variables.
 
-For Windows you can execute [discord_dependencies.bat](/discord_dependencies.bat) found in this repo
+For Windows you can execute [dependencies.bat](/dependencies.bat) found in this repo
 - or
 Run the following command...
 ```
