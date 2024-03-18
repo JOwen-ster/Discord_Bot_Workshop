@@ -105,5 +105,5 @@ async def run(ctx, *, code: str): # run code that is sent in code block format
         response = piston.execute(language="py3", version="3.10.0", code=fcode)
         await ctx.channel.send(f'''```\n{response}```''', reference=ctx.message)
     else:
-        howto = '`$run\n```LANGUAGE_NAME\nCODE_HERE\n``` `'
+        howto = '`$run\n```py\nCODE_HERE\n``` `'
         await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
