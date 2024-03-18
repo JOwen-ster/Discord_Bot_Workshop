@@ -3,33 +3,35 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 
-# import os and load_dotenv to load the .env file 
-from os import getenv
-from dotenv import load_dotenv
-
 # import piston API to run code
 from pistonapi import PistonAPI
 
 # importing rand int to generate random numbers
 from random import randint
 
-# load discord bot token from .env file
-load_dotenv()
-TOKEN = getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
-intents = discord.Intents.all() # use discord.Intents.default() if you don't need all
-
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
-client = discord.Client(intents=intents) # create a new discord client with the intents to connect it to the discord gateway
+intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
+
+# Create a new discord client with the intents to connect it to the discord gateway
+# You can name it bot or application it is up to you
+client = discord.Client(intents=intents)
 
 # Set bot prefix
-client = commands.Bot(command_prefix='$', intents=intents) # you can also dm your bot to run commands!
+client = commands.Bot(command_prefix='$', intents=intents)
+
+# Keep in mind we do not need to use the @client decorator
+#if we are just defining a function that will be called in different file
+#which in this case is template.py where our bot will be ran from.
+
+# We only need to use the @client decorator if
+#we want to associate it with an action/command/event. The decorator will not transfer.
 
 # Decorators can be...
 # 1. A function name associated with an action.
-@client.event # decorator like a sync slash commands and show when the bot is ready
-async def on_ready(): # listener for when the bot has been connected to the gateway
+#@client.event # decorator like a sync slash commands and show when the bot is ready
+async def on_ready(): # listener for when the bot has been connected to the gateway (good practice)
     try:
         synced = await client.tree.sync()
         print(F'Synced {len(synced)} tree command(s).')
@@ -38,7 +40,7 @@ async def on_ready(): # listener for when the bot has been connected to the gate
         print(F'Could Not Sync Tree: {e}')
 
 # 2. Using the @client.listen decorator, you can just pass in the event name as a string without overloading the function name.
-@client.listen('on_message') # listener for events
+#@client.listen('on_message') # listener for events
 async def mylistener(message):
     if message.author == client.user:
         return
@@ -48,26 +50,26 @@ async def mylistener(message):
 # This also applies the client.listen() decorator.
 # When using the overloaded method, you put await client.process_commands(message) at the end of the function to allow the bot to process commands. 
 
-# slash command
-@client.tree.command(name="ping", description="Check the bot's latency")
+# slash command (tree command)
+#@client.tree.command(name="ping", description="Check the bot's latency")
 async def ping(interaction: discord.Interaction):
     await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
 
 # slash command with an invisible response (ephemeral)
-@client.tree.command(name="secretnumber", description="Get a random number within your given range")
+#@client.tree.command(name="secretnumber", description="Get a random number within your given range")
 async def secretnumber(interaction: discord.Interaction, min: int, max: int):
     await interaction.response.send_message(f'Your secret random number is {randint(min, max)}', ephemeral=True) # ephemeral means only the user can see the response
 
 # slash command with an optional parameter by setting the default to None
-@client.tree.command(name="copyme", description="Send a message back to you with the same content")
+#@client.tree.command(name="copyme", description="Send a message back to you with the same content")
 async def copyme(interaction: discord.Interaction, phrase: str, optional_phrase: str=None):
     if optional_phrase is None:
         await interaction.response.send_message(f'You said "{phrase}"', ephemeral=True)
     else:
         await interaction.response.send_message(f'You said "{phrase}" and your optional phrase was "{optional_phrase}"', ephemeral=True)
 
-@client.command(name='dms') # regular prefix command, not a slash command
-async def dms(ctx): # if name is not specified, the function name is used
+#@client.command(name='dms') # regular prefix command, not a slash command
+async def cmd_dms(ctx): # name is specified, so $dms would work but not $cmd_dms
     # if you want to test dms without sending a message do this...
     # try:
     #     await user.send()
@@ -83,32 +85,25 @@ async def dms(ctx): # if name is not specified, the function name is used
 # If you want to pass an unknown amount of parameters with a slash command,
 # I would recommend splitting the one paramater by spaces into a list of strings then iterate the list.
 # EX. parameter_list: list[str] = myparameter.split()
-@client.command()
+#@client.command() # name is not specified, so we use the function name for the command name
 async def repeat(ctx, *, arg): # passing unknown amount of parameters without parsing them
     await ctx.send(arg) # arg is a string
 
-@client.command()
+#@client.command()
 async def repeatparams(ctx, *args): # passing and parsing unknown amount of parameters
     arguments = ', '.join(args) # *args is a tuple
     await ctx.send(f'{len(args)} arguments: {arguments}')
 
-@client.command()
+#@client.command()
 async def run(ctx, *, code: str): # run code that is sent in code block format
     piston = PistonAPI()
     await ctx.channel.send('Running...')
     
-    if code.startswith('```') and code.endswith('```'):
-        code = code[3:-3]
+    if code.startswith('```py') and code.endswith('```'):
+        code = code[5:-3]
         fcode = f'''{code}'''
         response = piston.execute(language="py3", version="3.10.0", code=fcode)
         await ctx.channel.send(f'''```\n{response}```''', reference=ctx.message)
     else:
         howto = '`$run\n```LANGUAGE_NAME\nCODE_HERE\n``` `'
         await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
-# if py use python
-# if cpp use c++
-# if js use javascript
-# if java use java
-# Make a command that list all VALID code block languages
-
-client.run(TOKEN)

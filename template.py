@@ -35,14 +35,13 @@ async def on_ready():
         print(F'{client.user} is ready.')
     except Exception as e:
         print(F'Could Not Sync Tree: {e}')
-        
-@client.tree.command(name="ping", description="Check the bot's latency") # slash command
-async def ping(interaction: discord.Interaction, param: str, optional_param: str=None):
-    await bot_methods.ping(interaction, param, optional_param)
 
 @client.command(name='run')
 async def run_code(ctx, *, code: str):
-    await bot_methods.bot_run(ctx, code)
+    await bot_methods.run(ctx, code=code)
+
 
 client.run(token=TOKEN)
-# end
+
+
+
