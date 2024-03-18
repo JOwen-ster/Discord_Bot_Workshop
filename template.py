@@ -7,10 +7,13 @@ from discord import app_commands
 from os import getenv
 from dotenv import load_dotenv
 
+#import commands from bot_methods.py
+import bot_methods
+
+
 # load discord bot token from .env file
 load_dotenv()
 TOKEN = getenv("DISCORD_TOKEN")
-
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
@@ -35,8 +38,11 @@ async def on_ready():
         
 @client.tree.command(name="ping", description="Check the bot's latency") # slash command
 async def ping(interaction: discord.Interaction, param: str, optional_param: str=None):
-    await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
+    await bot_methods.ping(interaction, param, optional_param)
 
+@client.command(name='run')
+async def run_code(ctx, *, code: str):
+    await bot_methods.bot_run(ctx, code)
 
 client.run(token=TOKEN)
 # end
