@@ -106,7 +106,7 @@ Create a new file named `.gitignore` (no name before the dot) and put the follow
 ```
 
 Create a new file and name it `bot.py`
-- Use my [discord python bot template](/bot_template.py) to get all the runner code and put it into your `bot.py` file (found in this repository).
+- Use my [discord python bot template](/template.py) to get all the runner code and put it into your `bot.py` file (found in this repository).
 
 
 
