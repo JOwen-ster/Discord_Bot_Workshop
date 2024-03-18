@@ -72,7 +72,7 @@ This will create a link that people can click to add your bot to any server with
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop_2024/assets/111905194/79737d0c-b11f-4ee2-a0e2-f23a2d7f92f7)
 
 ## Coding the Actual Discord Bot
-By the end, we will have a bot that is able to run python code that you paste into Discord using pistonapi!
+By the end, we will have a bot that is able to run Python code that you paste into Discord using pistonapi!
 We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) api wrapper in this workshop.
 
 [Read the docs (How to do Commands)](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
