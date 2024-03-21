@@ -7,8 +7,8 @@ from discord import app_commands
 from os import getenv
 from dotenv import load_dotenv
 
-# Import commands from bot_methods.py
-import bot_methods
+# Import piston API to run code
+from pistonapi import PistonAPI
 
 
 # Set all non privlleged gateway intents for discord bot
