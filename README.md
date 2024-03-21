@@ -95,9 +95,8 @@ Install from the requirements.txt in this repo...
 ```
 pip install -r requirements.txt
 ```
-After you have successfully installed the libraries, create a new folder OUTSIDE THIS DIRECTORY (Since this is going to be your bot) and name it something like `mydiscordbot` and open it up with your favorite code editor.
+After you have successfully installed the libraries...
 
-### IN THE FOLDER
 Create a new file named `.env` (no name before the dot) and put the following in it.
 ```
 DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
@@ -110,6 +109,7 @@ Create a new file named `.gitignore` (no name before the dot) and put the follow
 
 Create a new file and name it `bot.py`
 - Use my [discord python bot template](/template.py) to paste the runner code in into `bot.py`.
+- Add your commands  by reading the documentation, looking things up, and asking questions (refer to the [methods file](/bot_methods.py) for some starter commands and explanation) 
 - Run your code when done
 
 If you see the following (Along with YOU_BOT_USERNAME is ready) in your terminal output, your bot should be up and running!
@@ -125,7 +125,6 @@ Go ahead and use the `OAuth2 URL Generator` link we made and add your bot to a t
 <details>
   <summary>Bot.py Answer</summary>
   
-  Spoilers ahead.
 ```py  
 # Import discord.py
 import discord
