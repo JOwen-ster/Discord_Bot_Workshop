@@ -59,8 +59,8 @@ async def ping(interaction: discord.Interaction):
 
 # slash command with an invisible response (ephemeral)
 #@client.tree.command(name="secretnumber", description="Get a random number within your given range")
-async def secretnumber(interaction: discord.Interaction, min: int, max: int):
-    await interaction.response.send_message(f'Your secret random number is {randint(min, max)}', ephemeral=True) # ephemeral means only the user can see the response
+async def secretnumber(interaction: discord.Interaction, phrase: str, min: int, max: int):
+    await interaction.response.send_message(f'Your secret phrase is {phrase} and your secret random number is {randint(min, max)}', ephemeral=True) # ephemeral means only the user can see the response
 
 # slash command with an optional parameter by setting the default to None
 #@client.tree.command(name="copyme", description="Send a message back to you with the same content")
