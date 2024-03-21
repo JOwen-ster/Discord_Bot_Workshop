@@ -146,7 +146,10 @@ TOKEN = getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
-intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
+# For today we need the message content intent so using all covers this.
+intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all.
+# If we were to not use .all(), we could do .default() and then on a new line...
+#intents.message_content = True
 
 # Set a bot prefix to listen for commands
 # Create a new discord client with the intents to connect it to the discord gateway
