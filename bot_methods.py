@@ -15,7 +15,7 @@ from random import randint
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
-intents = discord.Intents.default() # Can also use discord.Intents.all() if you need them all
+intents = discord.Intents.all() 
 
 # Set a bot prefix to listen for commands
 # Create a new discord client with the intents to connect it to the discord gateway

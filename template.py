@@ -8,7 +8,7 @@ from os import getenv
 from dotenv import load_dotenv
 
 # Import commands from bot_methods.py
-import bot_methods
+import BOT_METHODS
 
 
 # Load discord bot token from .env file
@@ -16,8 +16,12 @@ load_dotenv()
 TOKEN = getenv("DISCORD_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
-# https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
 intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
+# for example, if you only need the guilds and message_content intents
+# https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
+# intents = discord.Intents.default()
+# intents.guilds = True
+# intents.message_content = True
 
 # Set a bot prefix to listen for commands
 # Create a new discord client with the intents to connect it to the discord gateway
