@@ -115,9 +115,11 @@ Create a new file and name it `bot.py`
 - Run your code when done
 
 If you see the following (Along with YOU_BOT_USERNAME is ready) in your terminal output, your bot should be up and running!
+
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop/assets/111905194/8ba8730a-1464-4111-ac54-46a574f03a1f)
 
 Go ahead and use the `OAuth2 URL Generator` link we made and add your bot to a testing server and run the command!
+
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop/assets/111905194/25b69528-0056-410f-baae-df36155837c1)
 
 
