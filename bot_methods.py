@@ -109,3 +109,23 @@ async def run(ctx, *, code: str): # run code that is sent in code block format
     else:
         howto = '`$run\n```py\nCODE_HERE\n``` `'
         await ctx.channel.send(f'Please use code blocks to run code.\n{howto}', reference=ctx.message)
+
+# # HOW TO LOOP REMINDER ON START
+# import asyncio
+# @client.event
+# async def on_ready():
+#     print('LOGGED in AS {client.user}')
+#     await sendloop()
+
+# async def sendloop():
+#     channel_id: int = PUT_CHANNEL_ID_HERE_USING_DEVELOPER_MODE
+#     try:
+#         channel = client.get_channel(channel_id)
+#         while True:
+#             await channel.send('5 Hour Reminder!')
+#             await asyncio.sleep(5 * 60 * 60)  # 5 hours
+#     except:
+#         print('Invalid Channel ID')
+#         return
+
+
