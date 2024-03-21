@@ -110,8 +110,8 @@ Normally you would create a new file named `.gitignore` (no name before the dot)
 But I have already included it. Just know that if you choose to upload your bot code to GitHub, anything in `.gitignore` will not be included.
 
 Create a new file and name it `bot.py`
-- Use my [discord python bot template](/template.py) to paste the runner code in into `bot.py`.
-- Add your commands  by reading the documentation, looking things up, and asking questions (refer to the [methods file](/bot_methods.py) for some starter commands and explanation) 
+- Use my [discord python bot template](/TEMPLATE.py) to paste the runner code in into `bot.py`.
+- Add your commands  by reading the documentation, looking things up, and asking questions (refer to the [methods file](/BOT_METHODS.py) for some starter commands and explanation) 
 - Run your code when done
 
 If you see the following (Along with YOU_BOT_USERNAME is ready) in your terminal output, your bot should be up and running!
