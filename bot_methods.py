@@ -1,25 +1,25 @@
-# import discord.py
+# Import discord.py
 import discord
 from discord.ext import commands
 from discord import app_commands
 
-# import piston API to run code
-from pistonapi import PistonAPI
+# Import os and load_dotenv to load your bot token from the .env file 
+from os import getenv
+from dotenv import load_dotenv
 
-# importing rand int to generate random numbers
-from random import randint
+# Import commands from bot_methods.py
+import bot_methods
 
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
 intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
 
+# Set a bot prefix to listen for commands
 # Create a new discord client with the intents to connect it to the discord gateway
-# You can name it bot or application it is up to you
-client = discord.Client(intents=intents)
-
-# Set bot prefix
-client = commands.Bot(command_prefix='$', intents=intents)
+# You can name it bot, application, client (anything to refer to your bot) it is up to you
+BOT_PREFIX = '$'
+client = commands.Bot(command_prefix=BOT_PREFIX, intents=intents)
 
 # Keep in mind we do not need to use the @client decorator
 #if we are just defining a function that will be called in different file
