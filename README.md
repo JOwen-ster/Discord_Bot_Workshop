@@ -102,10 +102,12 @@ Create a new file named `.env` (no name before the dot) and put the following in
 DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
 ```
 
-Create a new file named `.gitignore` (no name before the dot) and put the following inside it.
+Normally you would create a new file named `.gitignore` (no name before the dot) and put the following inside it.
 ```
 .env
 ```
+
+But I have already included it. Just know that if you choose to upload your bot code to GitHub, anything in `.gitignore` will not be included.
 
 Create a new file and name it `bot.py`
 - Use my [discord python bot template](/template.py) to paste the runner code in into `bot.py`.
