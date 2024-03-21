@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 # Import piston API to run code
 from pistonapi import PistonAPI
 
+# Import randint for random number generator
+from random import randint
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
