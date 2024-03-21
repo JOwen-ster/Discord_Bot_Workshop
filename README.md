@@ -76,7 +76,7 @@ This will create a link and when clicked, that user can add your bot to any serv
 
 ## Coding the Actual Discord Bot
 By the end, we will have a bot that is able to run Python code that you paste into Discord using pistonapi!
-We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) api wrapper in this workshop.
+We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) API wrapper in this workshop.
 
 [Read the docs (How to do Commands)](https://discordpy.readthedocs.io/en/stable/ext/commands/commands.html)
 
@@ -96,6 +96,8 @@ Install from the requirements.txt in this repo...
 pip install -r requirements.txt
 ```
 After you have successfully installed the libraries...
+
+**Open your favorite code IDE!**
 
 Create a new file named `.env` (no name before the dot) and put the following in it.
 ```
