@@ -140,7 +140,7 @@ from os import getenv
 from dotenv import load_dotenv
 
 # Import commands from bot_methods.py
-import bot_methods
+import BOT_METHODS
 
 
 # Load discord bot token from .env file
