@@ -36,9 +36,7 @@ async def on_ready():
         print(F'Could Not Sync Tree: {e}')
 
 # How to make a slash command
-@client.tree.command(name="ping", description="Check the bot's latency")
-async def ping(interaction: discord.Interaction):
-    await interaction.response.send_message(f'Pong! I responded in {round(client.latency * 1000)}ms')
+
 
 # Our first command will go here!
 # First we need to tell Discord that this will be a new command
@@ -60,7 +58,5 @@ async def ping(interaction: discord.Interaction):
     # We use await to tell the bot to wait for the method to finish before continuing
     ##### CODE HERE #####
     
-
-
 client.run(token=TOKEN)
 
