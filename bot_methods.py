@@ -13,7 +13,7 @@ from pistonapi import PistonAPI
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
-intents = discord.Intents.all() # use discord.Intents.default() if you don't need them all
+intents = discord.Intents.default() # Can also use discord.Intents.all() if you need them all
 
 # Set a bot prefix to listen for commands
 # Create a new discord client with the intents to connect it to the discord gateway
