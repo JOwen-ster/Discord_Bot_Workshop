@@ -186,6 +186,8 @@ async def run_code(ctx, *, code: str):
     # We call the run method from bot_methods.py and pass in its parameters
     # We use await to tell the bot to wait for the method to finish before continuing
     await bot_methods.run(ctx, code=code)
+
+client.run(TOKEN)
 ```
   
 </details>
