@@ -32,7 +32,7 @@ Head over to the [discord developer page](https://discord.com/developers/applica
 > [!NOTE]
 > For simplicity we will not select a team, but you can create a team in the 'Teams' tab and add people that will be associated with the development of the bot!
 
-Click on the `Bot` tab and then scroll down to `Privileged Gateway Intents`. These are the different types of data that your bot will have access to when in a server. You can read about them on [developer gateway intents page].(https://discord.com/developers/docs/topics/gateway#gateway-intents) to see what each intent covers and if you may need a single or multiple when you make your own bot!
+Click on the `Bot` tab and then scroll down to `Privileged Gateway Intents`. These are the different types of data that your bot will have access to when in a server. You can read about them on [developer gateway intents page](https://discord.com/developers/docs/topics/gateway#gateway-intents) to see what each intent covers and if you may need a single or multiple when you make your own bot!
 
 > [!NOTE]
 > For simplicity, we will select all gateway intents in case you want to add more to your first bot. In real practice, you want to read up on these intents and see which your bot would need since when you apply to get your bot verified at 75 servers, Discord will ask you why you are using them! You will need to apply for gateway intents separately with the verification process. If you have any questions about verifying a discord bot, ask me ([@JOwen-ster](https://github.com/JOwen-ster) on GitHub or [`typos.`](https://discord.com/) on Discord) since I have a bot that is in 200+ servers and is verified!
