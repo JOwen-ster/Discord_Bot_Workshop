@@ -1,8 +1,8 @@
 # Discord_Bot_Workshop
 A repo on how to setup a discord bot step by step!
 **You will need...**
-- Discord account
-- Python installed
+- [Discord](https://discord.com/) account
+- [Python](https://www.python.org/) installed
   - If you want to use JavaScript to make a discord bot, I recommend using this [template](https://github.com/PillowGit/base-discord-js-bot) made by [@PillowGit](https://github.com/PillowGit) for the coding portion
 - Internet access
 - A IDE to edit and run code (Like Visual Studio Code)
