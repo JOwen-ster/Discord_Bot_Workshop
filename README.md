@@ -94,7 +94,7 @@ for Windows you can double click and execute [dependencies.bat](/dependencies.ba
 
 After you have successfully installed the libraries...
 
-**Open your favorite code IDE!**
+## **Open your favorite code IDE!**
 
 Create a new file named `.env` (no name before the dot) and put the following in it.
 ```
