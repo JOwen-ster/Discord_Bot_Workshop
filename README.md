@@ -60,10 +60,10 @@ Under `Install Link`, there is a link you send to others. When clicked, that use
 > Go to the `Bot` tab.
 > Click `Reset Token` near the top of the page
 
-***__COPY AND SAVE THIS TOKEN SOMEWHERE SECURE AND SOMEWHERE YOU CAN ACCESS IT__***
+# ***__COPY AND SAVE THIS TOKEN SOMEWHERE SECURE AND SOMEWHERE YOU CAN ACCESS IT__***
 
 > [!CAUTION]
-> **THIS TOKEN IS HOW TO CONNECT TO YOUR APPLICATION WITH CODE, NO ONE NEEDS ANYTHING ELSE TO CONNECT/LOG INTO YOUR BOT EXCEPT THE MOST RECENT TOKEN. NEVER POST IT OR YOU RISK YOUR BOT GETTING HIGHJACKED**
+> # **THIS TOKEN IS HOW TO CONNECT TO YOUR APPLICATION WITH CODE, NO ONE NEEDS ANYTHING ELSE TO CONNECT/LOG INTO YOUR BOT EXCEPT THE MOST RECENT TOKEN. NEVER POST IT OR YOU RISK YOUR BOT GETTING HIGHJACKED**
 
 > [!CAUTION]
 > If you do not gitignore the `.env` file in your `.gitignore` file (the `.env` file is where you should put your token, not in your bot code) , then GitHub bots **will** scrape your token (it has happened to me) and may use it. Discord will hopefully send you a message very fast saying they caught it and reset it since they are also scraping for Discord Bot Tokens to watch out for you and keeping your bots secure :)
@@ -78,19 +78,20 @@ We will be using the [discord.py](https://discordpy.readthedocs.io/en/stable/) A
 
 [Read the docs (How to do Events/Listeners)](https://discordpy.readthedocs.io/en/stable/api.html?highlight=event#discord-api-events)
 
-Go ahead and `pip install` the required libraries for Discord, Environment Variables, and PistonAPI (used to run code safely and send the output which is what our bot will do).
+Go ahead and install the required libraries listen bellow for Discord, Environment Variables, and PistonAPI (used to run code safely and send the output which is what our bot will do).
 
-For Windows you can execute [dependencies.bat](/dependencies.bat) found in this repo
-- or
-Pip install with the following command...
-```
-pip install discord && pip install python-dotenv && pip install pistonapi
-```
-- or
 Install from the requirements.txt in this repo...
 ```
 pip install -r requirements.txt
 ```
+- or
+Pip install manually with the following command...
+```
+pip install discord && pip install python-dotenv && pip install pistonapi
+```
+- or
+for Windows you can double click and execute [dependencies.bat](/dependencies.bat) in file explorer found in this repositorys directory.
+
 After you have successfully installed the libraries...
 
 **Open your favorite code IDE!**
