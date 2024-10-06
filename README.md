@@ -98,15 +98,15 @@ After you have successfully installed the libraries...
 
 Create a new file named `.env` (no name before the dot) and put the following in it.
 ```
-DISCORD_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
+DISCORD_BOT_TOKEN = 'YOUR_BOT_TOKEN_GOES_HERE'
 ```
 
-Normally you would create a new file named `.gitignore` (no name before the dot) and put the following inside it.
+Normally you would create a new file named `.gitignore` and put the following inside it.
 ```
 .env
 ```
 
-But I have already included it. Just know that if you choose to upload your bot code to GitHub, anything in `.gitignore` will not be included.
+But I have already included it in this repository. Just know that if you choose to upload your bot code to GitHub, anything in `.gitignore` will not be included (which your Discord bot token should **NOT** be included).
 
 Create a new file and name it `bot.py`
 - Use my [discord python bot template](/TEMPLATE.py) to paste the runner code in into `bot.py`.
@@ -117,11 +117,9 @@ If you see the following (Along with YOU_BOT_USERNAME is ready) in your terminal
 
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop/assets/111905194/8ba8730a-1464-4111-ac54-46a574f03a1f)
 
-Go ahead and use the `OAuth2 URL Generator` link we made and add your bot to a testing server and run the command!
+Go ahead and use the `Discord Provided link` we made and add your bot to a testing server and run the command!
 
 ![image](https://github.com/JOwen-ster/Discord_Bot_Workshop/assets/111905194/25b69528-0056-410f-baae-df36155837c1)
-
-
 
 
 # FINAL BOT CODE ANSWER - no peaking :)
