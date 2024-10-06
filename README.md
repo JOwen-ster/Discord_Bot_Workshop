@@ -142,7 +142,7 @@ import BOT_METHODS
 
 # Load discord bot token from .env file
 load_dotenv()
-TOKEN = getenv("DISCORD_TOKEN")
+TOKEN = getenv("DISCORD_BOT_TOKEN")
 
 # Set all non privlleged gateway intents for discord bot
 # https://discordpy.readthedocs.io/en/latest/api.html#discord.Intents
